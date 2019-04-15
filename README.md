@@ -1,4 +1,4 @@
-# Bone Fracture Detection
+# Cat Vs Dog Classification
 
 This project is aimed as a simple classification exercise using Keras. The intermediate layers are visualized to understand the activation outputs.
 
