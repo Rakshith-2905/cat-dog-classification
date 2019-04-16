@@ -69,7 +69,7 @@ def predict(model_path = 'model.h5', data_path = 'dataset/test_set/', image_size
         cv2.imshow('output', image)
         cv2.waitKey(0)
 
-        visualize_activations(model, image_predict, 5)
+        visualize_activations(model, image_predict, [1, 2])
 
 
         # activations = activation_model.predict(image_predict) 
@@ -81,12 +81,12 @@ def predict(model_path = 'model.h5', data_path = 'dataset/test_set/', image_size
         # plt.matshow(first_layer_activation[0, :, :, 0], cmap='viridis')
         # plt.show()
     
-def visualize_activations(model, image, layer_number):
+def visualize_activations(model, image, layer_list):
 
     # These are the names of the layers, so can have them as part of our plot
     layer_names = []
 
-    for layer in model.layers[:8]:
+    for layer in model.layers:
         layer_names.append(layer.name)
 
     images_per_row = 16
@@ -98,7 +98,9 @@ def visualize_activations(model, image, layer_number):
     activations = activation_model.predict(image)
 
     # Now let's display our feature maps
-    for layer_name, layer_activation in zip(layer_names, activations):
+    for layer_name, nb_layer in zip(layer_names, layer_list):
+
+        layer_activation = activations[nb_layer]
         # This is the number of features in the feature map
         n_features = layer_activation.shape[-1]
 

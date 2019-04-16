@@ -22,6 +22,11 @@ What's all the bells and whistles this project can perform?
 * Classify Cats and dogs images
 * Visualize intermediate Layers
 
+
+![First Convolution 2D][images/conv2D_1.png]
+
+![Test Image][images/cat_or_dog_1.jpg]
+
 ## Usage
 
 Clone the repository using.
