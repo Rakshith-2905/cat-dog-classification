@@ -23,9 +23,9 @@ What's all the bells and whistles this project can perform?
 * Visualize intermediate Layers
 
 
-![First Convolution 2D][images/conv2D_1.png]
+![First Convolution 2D][/images/conv2D_1.png]
 
-![Test Image][images/cat_or_dog_1.jpg]
+![Test Image][/images/cat_or_dog_1.jpg]
 
 ## Usage
 
