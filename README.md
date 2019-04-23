@@ -24,8 +24,10 @@ What's all the bells and whistles this project can perform?
 
 
 ![First Convolution 2D][/images/conv2D_1.png]
+Format: ![Alt Text](url)
 
 ![Test Image][/images/cat_or_dog_1.jpg]
+Format: ![Alt Text](url)
 
 ## Usage
 
